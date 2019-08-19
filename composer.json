@@ -1,0 +1,24 @@
+{
+    "name": "wgc/NovaSite",
+    "type": "library",
+    "authors": [
+        {
+            "name": "wenguang",
+            "email": "569576618@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Wgc\\NovaSite\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wgc\\NovaSite\\NovaSiteSerivceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
