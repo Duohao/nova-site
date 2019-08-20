@@ -15,4 +15,9 @@ class NovaSite extends Model
     {
         return $this->morphTo();
     }
+
+    public function pages()
+    {
+        return $this->hasMany(\Wgc\NovaSite\Models\SitePages::class, 'site_id', 'id');
+    }
 }
