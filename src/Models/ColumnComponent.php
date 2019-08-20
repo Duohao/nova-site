@@ -10,4 +10,9 @@ class ColumnComponent extends Model
     {
         $this->setTable(config('nova_site.table_names.column_component'));
     }
+
+    public function components()
+    {
+        return $this->hasOne(\Wgc\NovaSite\Models\Components::class, 'id', 'component_id');
+    }
 }
